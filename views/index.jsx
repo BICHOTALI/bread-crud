@@ -14,7 +14,7 @@ function Index ({ breads, bakers }) {
 
     const bakerDisplay = bakers.map(baker => {
         return (
-            <li>
+            <li key={baker._id}>
                 <a href={`bakers/${baker._id}`}>
                     {baker.name}
                 </a>
